@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #2563eb;
+  --color-accent: #8b5cf6;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #0f172a;
+  --color-surface-dark-alt: #1e293b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-900 dark:bg-surface-dark dark:text-gray-100 transition-colors duration-300;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+:root {
+  --timeline-bg: #ffffff;
+}
+
+.dark {
+  --timeline-bg: #1e293b;
+}
+
+.react-vertical-timeline-component {
+  @apply !p-0;
+}
+
+.vertical-timeline-element-content {
+  @apply !shadow-lg !border-none;
+  background: var(--timeline-bg) !important;
+}
+
+.dark .vertical-timeline-element-content {
+  color: #f1f5f9 !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right-color: var(--timeline-bg) !important;
+}
+
+.vertical-timeline::before {
+  @apply dark:!bg-gray-700;
+}
+
+.vertical-timeline-element-date {
+  @apply dark:!text-gray-400;
+}
