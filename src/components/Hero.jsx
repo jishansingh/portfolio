@@ -128,23 +128,6 @@ export default function Hero() {
               View My Work
             </motion.a>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex-shrink-0"
-          >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              <div className="w-full h-full rounded-full overflow-hidden shadow-2xl">
-                <img
-                  src={personalInfo.profileImage}
-                  alt={personalInfo.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
 

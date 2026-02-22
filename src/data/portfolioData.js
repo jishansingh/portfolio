@@ -18,7 +18,7 @@ export const portfolioData = {
       email: "singhjishan2@gmail.com",
       phone: "+91 6280 482 061",
     },
-    profileImage: `${base}images/profile.jpg`,
+    profileImage: `${base}images/profile.jpeg`,
   },
 
   experience: [
