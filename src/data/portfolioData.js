@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const portfolioData = {
   personalInfo: {
     name: "Jishan Singh",
@@ -16,7 +18,7 @@ export const portfolioData = {
       email: "singhjishan2@gmail.com",
       phone: "+91 6280 482 061",
     },
-    profileImage: "/images/profile.jpg",
+    profileImage: `${base}images/profile.jpg`,
   },
 
   experience: [
@@ -183,33 +185,33 @@ export const portfolioData = {
       technologies: ["Kotlin", "Jetpack Compose", "Material 3", "MVVM"],
       github: "https://github.com/jishansingh/FlashArithmetic",
       live: null,
-      image: "/images/projects/flash-arithmetic-start.jpeg",
+      image: `${base}images/projects/flash-arithmetic-start.jpeg`,
       detailDescription:
         "Built a complete Android app using Kotlin and Jetpack Compose with Material 3 design. Features configurable difficulty settings (digit count, number count, speed, operation type), a state-machine game loop powered by ViewModel + StateFlow, and persistent user preferences via DataStore. Supports addition, subtraction, multiplication, division, and mixed operations.",
       media: [
         {
           type: "image",
-          url: "/images/projects/flash-arithmetic-start.jpeg",
+          url: `${base}images/projects/flash-arithmetic-start.jpeg`,
           caption: "Start Screen",
         },
         {
           type: "image",
-          url: "/images/projects/flash-arithmetic-problems.jpeg",
+          url: `${base}images/projects/flash-arithmetic-problems.jpeg`,
           caption: "Numbers Flashing",
         },
         {
           type: "image",
-          url: "/images/projects/flash-arithmetic-correct.jpeg",
+          url: `${base}images/projects/flash-arithmetic-correct.jpeg`,
           caption: "Correct Answer",
         },
         {
           type: "image",
-          url: "/images/projects/flash-arithmetic-wrong.jpeg",
+          url: `${base}images/projects/flash-arithmetic-wrong.jpeg`,
           caption: "Wrong Answer",
         },
         {
           type: "image",
-          url: "/images/projects/flash-arithmetic-settings.jpeg",
+          url: `${base}images/projects/flash-arithmetic-settings.jpeg`,
           caption: "Settings",
         },
       ],
@@ -233,28 +235,28 @@ export const portfolioData = {
       technologies: ["C++", "OpenGL", "GLFW", "GLEW"],
       github: "https://github.com/jishansingh/myGameEngine",
       live: null,
-      image: "/images/projects/game-engine.png",
+      image: `${base}images/projects/game-engine.png`,
       detailDescription:
         "Built a custom 3D game engine from scratch following Cherno's game engine series. The engine can load 3D models with full texture and normal map support, render scenes with multiple lighting effects (directional, point, spot lights), and handle shadow mapping. Worked with C++ DLL files to reduce dependencies and improve modularity. Designed using OOP principles, allowing flexible class extensions for enhanced customization and scalability.",
       media: [
         {
           type: "image",
-          url: "/images/projects/game-engine.png",
+          url: `${base}images/projects/game-engine.png`,
           caption: "Game Engine — Scene View",
         },
         {
           type: "image",
-          url: "/images/projects/opengl-asteroid.png",
+          url: `${base}images/projects/opengl-asteroid.png`,
           caption: "OpenGL — Asteroid Field Rendering",
         },
         {
           type: "image",
-          url: "/images/projects/opengl-pbr.png",
+          url: `${base}images/projects/opengl-pbr.png`,
           caption: "PBR Rendering with HDR Lighting",
         },
         {
           type: "image",
-          url: "/images/projects/2d-game.png",
+          url: `${base}images/projects/2d-game.png`,
           caption: "2D Brick Breaker Game (earlier project)",
         },
       ],

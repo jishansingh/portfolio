@@ -48,7 +48,7 @@ export default function Hero() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/background.png')" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/background.png')` }}
       />
       {/* Overlay only behind the text side, not the image */}
 
