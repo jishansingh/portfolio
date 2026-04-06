@@ -179,6 +179,24 @@ export const portfolioData = {
 
   projects: [
     {
+      title: "ScanForge",
+      description:
+        "A user-centric PDF scanner app that’s free, fully functional, and has no ads or hidden costs.",
+      technologies: ["Kotlin", "Jetpack Compose", "Android", "PDF"],
+      github: "https://github.com/jishansingh/ScanForge",
+      live: null,
+      image: null,
+      detailDescription:
+        "ScanForge is a user-centric PDF scanner built to be truly free: no ads, no paywalls, and no hidden costs. It focuses on a clean scanning experience and producing share-ready PDFs with minimal friction.",
+      media: [
+        {
+          type: "youtube",
+          url: "https://www.youtube.com/embed/vGFhq98imUU",
+          caption: "ScanForge — Tutorial",
+        },
+      ],
+    },
+    {
       title: "Flash Arithmetic",
       description:
         "An Android app for practicing mental arithmetic. Numbers flash on screen one at a time and you compute the running total in your head, then type your answer before time runs out.",
